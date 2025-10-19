@@ -2,6 +2,8 @@
 
 A DIY electronic telescope focuser engineered for **heavy imaging trains** and designed to be physically compatible with ZWO EAF (Electronic Automatic Focuser) mounting brackets. Simply order the PCB from JLCPCB or PCBWay, solder a few components, 3D print the enclosure, and you'll have a robust focuser capable of handling substantial camera and filter wheel setups at a fraction of commercial prices.
 
+![PCB](img/pcb.png)
+
 ![Project Overview](https://img.shields.io/badge/Status-Active-green) ![Hardware](https://img.shields.io/badge/Hardware-KiCad-blue) ![License](https://img.shields.io/badge/License-Open%20Source-orange)
 
 ## 🎯 Project Overview
