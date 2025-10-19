@@ -1,0 +1,7 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+A1,Arduino_Nano,1,Arduino_Nano,
+A2,Pololu_Breakout-16_15.2x20.3mm,1,DRV8825,
+C1,CP_Radial_D6.3mm_P2.50mm,1,100uF,
+J1,PinHeader_1x04_P2.54mm_Vertical,1,Conn_01x04,
+J2,BarrelJack_GCT_DCJ200-10-A_Horizontal,1,12V,
+J3,PinHeader_1x03_P2.54mm_Vertical,1,buttons,
