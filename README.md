@@ -1,6 +1,6 @@
-# MyFocuserPro2 EAF - ZWO EAF Compatible Telescope Focuser
+# MyFocuserPro2 EAF - EAF Bracket Compatible Telescope Focuser
 
-A DIY electronic telescope focuser engineered for **heavy imaging trains** and designed to be physically compatible with ZWO EAF (Electronic Automatic Focuser) mounting brackets. Simply order the PCB from JLCPCB or PCBWay, solder a few components, 3D print the enclosure, and you'll have a robust focuser capable of handling substantial camera and filter wheel setups at a fraction of commercial prices.
+A DIY electronic telescope focuser engineered for **heavy imaging trains** and designed to be physically compatible with standard EAF mounting brackets. Simply order the PCB from JLCPCB or PCBWay, solder a few components, 3D print the enclosure, and you'll have a robust focuser capable of handling substantial camera and filter wheel setups at a fraction of commercial prices.
 
 ![PCB](img/pcb.png)
 
@@ -8,14 +8,14 @@ A DIY electronic telescope focuser engineered for **heavy imaging trains** and d
 
 ## 🎯 Project Overview
 
-This focuser is based on the MyFocuserPro2 project with modifications for ZWO EAF compatibility. It uses a precision geared stepper motor, Arduino Nano microcontroller, and DRV8825 stepper driver, all integrated into a single compact enclosure that mounts directly to standard ZWO EAF brackets.
+This focuser is based on the MyFocuserPro2 project with modifications for standard EAF bracket compatibility. It uses a precision geared stepper motor, Arduino Nano microcontroller, and DRV8825 stepper driver, all integrated into a single compact enclosure that mounts directly to standard EAF brackets using the same bolt pattern.
 
 **Perfect for astrophotographers** running heavy imaging setups with large cameras, filter wheels, and guide cameras - this focuser provides the torque and precision needed for reliable focusing under load.
 
 ### Key Features
 
 - **Heavy Load Capable**: Engineered to handle substantial imaging trains with confidence
-- **ZWO EAF Compatible**: Direct physical compatibility with ZWO EAF mounting brackets
+- **EAF Bracket Compatible**: Same mounting pattern and bolt spacing as standard EAF brackets
 - **Simple DIY Build**: Order PCB → Solder components → Print enclosure → Done!
 - **High Precision**: Uses 17hs13-0404S-PG27 geared stepper motor from StepperOnline
 - **Arduino-Based**: Easy to program and modify with Arduino Nano
@@ -109,6 +109,11 @@ Order these components (reference `production/bom.csv` for exact specifications)
 
 *No SMD components - all through-hole for easy hand soldering!*
 
+#### Assembly Photos
+![Assembly Step 1](img/assembly-1.jpeg)
+![Assembly Step 2](img/assembly-2.jpeg)
+![Assembly Step 3](img/assembly-3.jpeg)
+
 ### 4. 3D Printing (2-3 hours print time)
 
 Print the enclosure parts from the `enclosure/` directory:
@@ -134,12 +139,12 @@ Print the enclosure parts from the `enclosure/` directory:
 
 **Load Capacity**: Easily handles imaging trains exceeding 3kg.
 
-Tested with the following image train with consistent results. ZWO EAF had issues handling this image train.
+Tested with the following image train with consistent results. Commercial EAF units had issues handling this image train.
 
 * Sharpstar ED 1x Coma corrector
-* ZWO Off Axis Guider
+* Off Axis Guider
 * Wanderer Astro Rotator Mini V2
-* ZWO 7x2" EFW (fully loaded)
+* 7x2" EFW (fully loaded)
 * ASI2600MC
 
 ### 6. Final Assembly (10 minutes)
@@ -148,10 +153,15 @@ Tested with the following image train with consistent results. ZWO EAF had issue
 2. **Connect Motor**: Stepper motor to J1 (4-pin header)
 3. **Connect Power**: 12V power supply to J2 (barrel jack)
 5. **Secure Cover**: Attach printed cover and test functionality
-6. **Mount to Telescope**: Install using standard ZWO EAF bracket
+6. **Mount to Telescope**: Install using standard EAF bracket
 
 **Total Build Time**: ~30 minutes active work + print time
 **Total Cost**: ~$50 vs $300+ commercial focusers
+
+#### Finished Product
+![Finished Focuser 1](img/finished-1.jpeg)
+![Finished Focuser 2](img/finished-2.jpeg)
+![Finished Focuser 3](img/finished-3.jpeg)
 
 ## ⚡ Power Requirements
 
@@ -188,7 +198,7 @@ This hardware is designed to work with MyFocuserPro2 firmware or compatible Ardu
 ## 🔗 Compatibility
 
 ### Mechanical Compatibility
-- **ZWO EAF Bracket**: Direct mounting compatibility
+- **EAF Bracket**: Direct mounting compatibility with standard EAF bracket bolt pattern
 - **Telescope Interfaces**: Standard focuser mounting patterns
 - **Motor Coupling**: 17hs13-0404S-PG27 optimized design
 
@@ -212,9 +222,9 @@ This hardware is designed to work with MyFocuserPro2 firmware or compatible Ardu
 ## 📐 Mechanical Specifications
 
 - **Load Capacity**: 3-5kg+ imaging trains (6-11+ lbs)
-- **Enclosure Dimensions**: Optimized for ZWO EAF bracket compatibility
+- **Mounting**: Standard EAF bracket bolt pattern and center spacing
+- **Enclosure Dimensions**: Optimized for EAF bracket compatibility
 - **Weight**: Approximately 200-300g (depending on motor)
-- **Mounting**: Standard ZWO EAF bracket interface
 - **Motor Output**: Direct coupling to focuser mechanism
 - **Backlash**: Minimal due to planetary gearbox design
 - **Resolution**: Sub-micron focusing steps with geared motor
@@ -259,7 +269,6 @@ For technical support and questions:
 ## 🔗 Related Projects
 
 - **MyFocuserPro2**: Base project this design is derived from
-- **ZWO EAF**: Commercial focuser this project is compatible with
 - **StepperOnline**: Source for recommended geared stepper motor
 
 ---
